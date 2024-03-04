@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@1,600&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body{
+    background-image: url(./assets/backgrond.png);
+    object-fit: fill;
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+    background-color:black ;
+}
+
+.navbar > img{
+    width: 15em;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 0 2em;
+}
+
+li{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+}
+
+.container > h1,p{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+}
+
+p{
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+h1{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+}
