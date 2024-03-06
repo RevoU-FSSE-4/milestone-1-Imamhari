@@ -2,7 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@1,600&display=swap');
 
-
+/* :root{
+    --white: 
+} */
 *{
     padding: 0;
     margin: 0;
@@ -15,7 +17,6 @@ nav{
     position: sticky;
     z-index: +1;
     top: 0;
-
 }
 
 .navbar > img{
@@ -32,8 +33,6 @@ nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 0px;
-    padding: 0 4em;
 
 }
 
@@ -74,7 +73,7 @@ header{
 }
 header > h1{
     font-family: "Anta", sans-serif;
-    font-weight: 60px;
+    font-weight: 600;
     font-size: 3em;
     font-style: italic ;
     color: white;
@@ -113,6 +112,7 @@ header > p{
 .card{
     padding: 20px;
     border: 2px solid black;
+    
 }
 
 .card > img{
@@ -129,8 +129,8 @@ header > p{
     font-style: italic;
 
 }
-#item-1{
-    width: 27em;
+#tony{
+    width: 28em;
 }
 
 footer > p{

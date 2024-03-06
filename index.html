@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Photography Course</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,7 @@
         <ul class="nav-list">
             <li><a href="#“Life is like a camera. Focus on what's important. Capture the good times. And if things don't work out, just take another shot”">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="register.html">Register Here</a></li>
+            <li><a href="register.html">Register</a></li>
         </ul>
         </div>
     </nav>
@@ -41,24 +42,30 @@
             <h2 id="“Life is like a camera. Focus on what's important. Capture the good times. And if things don't work out, just take another shot”">
                 “Life is like a camera. Focus on what's important. Capture the good times. And if things don't work out, just take another shot”</h2>
             <figure class="top-card">
-                <div class="card">
-                    <img src="./assets/item1.JPG" alt="item-1"  id="item-1">
+                <picture class="card">
+                    <source media="(max-width: 750px)" srcset="assets/item1small.JPG">
+                    <source media="(min-width: 751px)" srcset="assets/item1.JPG">
+                    <img src="assets/item1.JPG" alt="item-1"  id="tony">
                     <h3>Tony Stark</h3>
                     <br>
                     <p>"Memory is a way of holding on to the things you love, <br>the things you are, the things you never want to lose"</p>
-                </div>
-                <div class="card">
-                    <img src="./assets/item2.jpg" alt="item-2">
+                </picture>
+                <picture class="card">
+                    <source media="(max-width: 750px)" srcset="assets/item2small.JPG">
+                    <source media="(min-width: 751px)" srcset="assets/item2.JPG">
+                    <img src="./assets/item2.jpg" alt="item-2" id="natasha">
                     <h3>Natasha Romanoff</h3>
                     <br>
                     <p>"Yesterday is but today’s memory, and tomorrow is today’s dream"</p>
-                </div>
-                <div class="card">
-                    <img src="./assets/item3.jpg" alt="item-3">
+                </picture>
+                <picture class="card">
+                    <source media="(max-width: 750px)" srcset="assets/item3small.JPG">
+                    <source media="(min-width: 751px)" srcset="assets/item3.JPG">
+                    <img src="./assets/item3.jpg" alt="item-3" id="loki">
                     <h3>Loki Odinson</h3>
                     <br>
                     <p>"No one can ever take your memories from you – each day is a <br> new beginning, make good memories every day."</p>
-                </div>
+                </picture>
               
             </figure>
         </article>
