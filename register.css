@@ -1,0 +1,47 @@
+body{
+    background-image: url(./assets/sunset.jpg);
+    background-size: cover;
+}
+.form{
+    margin: 15em;
+    display: flex;
+    flex-wrap: wrap;
+}
+h4{
+    text-align: center;
+    background-color: grey;
+}
+.form-register{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 0;
+    border-radius: 10px;
+/* } */
+.form-img > img{
+    width: 41em;
+}
+.form-text{
+    background-color: white;
+    height:33em;
+}
+.padding-text{
+    padding:  30px;
+}
+.register-btn{
+    background-color: #f38508;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.register-btn:hover{
+    background-color: #0d52e5;
+  color: white;
+}
+}

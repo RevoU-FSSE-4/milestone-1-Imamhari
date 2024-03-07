@@ -1,7 +1,6 @@
 @media only screen and (max-width: 750px ) {
     a{
-       padding: 0 7px;
-       font-size: 10px;
+       display: none;
     }
 
     header{
@@ -22,12 +21,25 @@
         
     }
 
+    .hamburger-btn{
+        display: block;
+        padding: 0 20px;
+    }
+
+    #mobile{
+        padding-left: 20px;
+        padding-top: 10px;  
+    }
+    #mobile >ul> li{
+        padding: 2px;
+    }
+
     .container > h2{
         margin: 6em 0;
         font-size: 20px;
     }
 
-    #tony, #natasha, #loki{
+    #tony, #natasha, #loki, #mori, #tomura, #swift {
         width: 10em;
     }
     .card > img{
@@ -35,16 +47,18 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .paragraf{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        padding: 30px;
+        margin: 2em 0;
+        text-align: center;
+    }
 
 }
 
 /* for iphone 12 pro */
 
 @media only screen and (max-width: 360px ) {
-    a{
-       padding: 0 2px;
-       font-size: 10px;
-    }
 
     header{
         background-image: url(./assets/backgrond2.png);

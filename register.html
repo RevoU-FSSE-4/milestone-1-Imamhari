@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="register.css">
     <title>Photography Course</title>
+    <link rel="icon" href="./assets/icons8-photography-100.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
@@ -24,41 +26,70 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="register.html">Register</a></li>
+            <img class="hamburger-btn" onclick="onOpenMenu()" src="./assets/hamburger.png" alt="menu" width="25px">
         </ul>
         </div>
     </nav>
+    <section>
+        <div id="mobile" class="menu-mobile">
+            <ul>
+                <li class="menu">Home</li>
+                <li class="menu">Gallery</li>
+                <li class="menu">Register</li>
+                <button onclick="onCloseMenu()" id="btn-close">Close</button>
+            </ul>
+        </div>
+    </section>
     <!-- header end -->
 
     <!-- content -->
     <form action class="form">
-        <p>Jika ingin costum silahkan isi form dibawah ini:</p>
-        <section>
-            <div>
-                <label for="input-name">Nama :</label>
-                <input type="text" placeholder="isi nama anda">
+        <div  class="form-register">
+            <div class="form-img">
+                <img src="./assets/registerfotobg.jpg" alt="register">
             </div>
-            <br>
-            <div>
-                <label for="numberphone">Nomor hp :</label>
-                <input type="number" placeholder="isi nomor hp anda">
+            <div class="form-text">
+                <div class="padding-text">
+                    <h4>ISIKAN DATA DIRI ANDA</h4>
+                    <br>
+                    <div>
+                        <label for="input-name">Nama Lengkap*</label> <br>
+                        <input type="text" placeholder="Nama Lengkap">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="input-email">Email*</label><br>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="input-email">Konfirmasi Email*</label><br>
+                        <input type="email" placeholder="Konfirmasi Email">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="numberphone">Nomor Handphone*</label> <br>
+                        <input type="number" placeholder="isi nomor hp anda">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="input-name">Alamat*</label><br>
+                        <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="isikan alamat anda disini"></textarea>
+                    </div>
+                    <div>
+                        <p>Apakah anda akan bergabung secepatnya?</p>
+                        <input type="radio" id="yes" name="fav_language" value="yes">
+                        <label for="html">Ya</label><br>
+                        <input type="radio" id="no" name="fav_language" value="no">
+                        <label for="css">Tidak</label><br>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" value="REGISTER HERE" class="register-btn">
+                    </div>
+                </div>
             </div>
-            <br>
-            <div>
-                <label for="input-name">Alamat:</label>
-                <br>
-                <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="isikan alamat anda disini"></textarea>
-            </div>
-            <div>
-                <p>Apakah suka dengan website ini:</p>
-                <input type="radio" id="yes" name="fav_language" value="yes">
-                <label for="html">Ya</label><br>
-                <input type="radio" id="no" name="fav_language" value="no">
-                <label for="css">Tidak</label><br>
-            </div>
-            <div>
-                <input type="submit" value="submit">
-            </div>
-        </section>
+        </div>
     </form>
     <!-- content end -->
     <!-- footer -->
@@ -68,5 +99,15 @@
         </p>
     </footer>
     <!-- footer end -->
+    <script>
+        function onOpenMenu(){
+            const popupMenu = document.getElementById("mobile");
+            popupMenu.classList.remove("menu-mobile")
+        }
+        function onCloseMenu(){
+            const popupMenu = document.getElementById("mobile");
+            popupMenu.classList.add("menu-mobile")
+        }
+    </script>
 </body>
 </html>

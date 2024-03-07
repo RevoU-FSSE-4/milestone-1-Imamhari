@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/icons8-photography-100.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <title>Photography Course</title>
@@ -24,9 +25,20 @@
             <li><a href="#“Life is like a camera. Focus on what's important. Capture the good times. And if things don't work out, just take another shot”">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="register.html">Register</a></li>
+            <img class="hamburger-btn" onclick="onOpenMenu()" src="./assets/hamburger.png" alt="menu" width="25px">
         </ul>
         </div>
     </nav>
+    <section>
+        <div id="mobile" class="menu-mobile">
+            <ul>
+                <li class="menu">Home</li>
+                <li class="menu">Gallery</li>
+                <li class="menu">Register</li>
+                <button onclick="onCloseMenu()" id="btn-close">Close</button>
+            </ul>
+        </div>
+    </section>
     <header>
         <h1>PHOTOGRAPHY COURSE</h1>
         <span class="material-symbols-outlined">
@@ -39,7 +51,7 @@
     <!-- content -->
     <section>
         <article class="container">
-            <h2 id="“Life is like a camera. Focus on what's important. Capture the good times. And if things don't work out, just take another shot”">
+                <h2 id="“Life is like a camera. Focus on what's important. Capture the good times. And if things don't work out, just take another shot”">
                 “Life is like a camera. Focus on what's important. Capture the good times. And if things don't work out, just take another shot”</h2>
             <figure class="top-card">
                 <picture class="card">
@@ -66,8 +78,41 @@
                     <br>
                     <p>"No one can ever take your memories from you – each day is a <br> new beginning, make good memories every day."</p>
                 </picture>
-              
+                <picture class="card">
+                    <source media="(max-width: 750px)" srcset="assets/item4small.jpg">
+                    <source media="(min-width: 751px)" srcset="assets/item4.webp">
+                    <img src="./assets/item4.webp" alt="item-3" id="mori">
+                    <h3>Mori Jin</h3>
+                    <br>
+                    <p>“I believe photographers should shoot what they want, <br> not shoot what they get.”</p>
+                </picture>
+                <picture class="card">
+                    <source media="(max-width: 750px)" srcset="assets/item5small.JPG">
+                    <source media="(min-width: 751px)" srcset="assets/item5.jpg">
+                    <img src="./assets/item5.jpg" alt="item-5" id="tomura">
+                    <h3>Shigaraki Tomura</h3>
+                    <br>
+                    <p>“Black and white are the colors of photography. <br> To me they symbolize the alternatives of <br> hope and despair to which mankind is forever subjected.”</p>
+                </picture>
+                <picture class="card">
+                    <source media="(max-width: 750px)" srcset="assets/item6small.JPG">
+                    <source media="(min-width: 751px)" srcset="assets/item6.webp">
+                    <img src="./assets/item6.webp" alt="item-6" id="swift">
+                    <h3>Taylor Swift</h3>
+                    <br>
+                    <p>“Photography for me is not looking, it’s feeling. If you can’t feel <br> what you’re looking at, then you’re never going to <br> get others to feel anything when they look at your pictures.”</p>
+                </picture>
             </figure>
+            <div class="paragraf">
+                <p>Photography course menawarkan program fotografi komprehensif dengan metode pembelajaran yang fun yang mengkombinasikan 
+                    teori dan latihan praktik untuk memenuhi standar di dunia fotografi profesional </p><br>
+                <p>Photography Course memiliki enam mentor yang sudah profesional di bidang fotografi  </p><br>
+                <p>Disini, siswa akan mempelajari segala aspek teknikal fotografi, mengenal berbagai macam dan fungsi jenis 
+                    kamera dan lensanya hingga tips dan trik terbaru tenteng fotografi</p> <br>
+                <p>Kami juga sudah bekerjasama dengan beberapa perusahaan yang bergerak di bidang fotografi. 
+                    Untuk membantu siswa mempromosikan karya mereka, kami akan bekerjasama dengan para siswa 
+                    dan mengadakan pameran fotografi yang nantinya pameran tersebut akan dihadiri oleh perusahaan yang bergerak di bidang fotografi ataupun masyarakat umum di akhir pembelajaran siswa Photography Course.</p>  
+            </div>
         </article>
     </section>
     <!-- content end -->
@@ -79,5 +124,15 @@
         </p>
     </footer>
     <!-- footer end -->
+    <script>
+        function onOpenMenu(){
+            const popupMenu = document.getElementById("mobile");
+            popupMenu.classList.remove("menu-mobile")
+        }
+        function onCloseMenu(){
+            const popupMenu = document.getElementById("mobile");
+            popupMenu.classList.add("menu-mobile")
+        }
+    </script>
 </body>
 </html>

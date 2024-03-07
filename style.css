@@ -2,9 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@1,600&display=swap');
 
-/* :root{
-    --white: 
-} */
+:root{
+    --white: #ffffff;
+    --black: #000000;
+}
 *{
     padding: 0;
     margin: 0;
@@ -13,10 +14,14 @@
 nav{
     margin: 0;
     padding: 0;
-    background-color:black;
+    background-color: var(--black);
     position: sticky;
     z-index: +1;
     top: 0;
+    border-bottom: 1px solid var(--black);
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.9);
+-webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.9);
+-moz-box-shadow: 0px 5px 4px 0px rgba(2, 2, 2, 0.9);
 }
 
 .navbar > img{
@@ -38,7 +43,7 @@ nav{
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
     font-family: "Archivo", sans-serif;
     font-size: 15px;
     font-weight: bold;
@@ -51,10 +56,23 @@ a:hover{
 
 li{
     text-decoration: none;
-    color: white;
+    color: var(--white);
     list-style: none;
 }
+.hamburger-btn{
+    display: none;
+}
 
+#mobile{
+    position: fixed;
+    background-color: var(--black);
+    height: 100px;
+    width: 100%;
+}
+
+.menu-mobile{
+    display: none;
+}
 header{
     background-image: url(./assets/backgrond.png);
     height: 55em;
@@ -64,7 +82,7 @@ header{
     justify-content: center;
     text-align: center;
     background-position: top center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--black);
     box-shadow: 0px 5px 4px 0px rgba(135,129,129,0.9);
 -webkit-box-shadow: 0px 5px 4px 0px rgba(135,129,129,0.9);
 -moz-box-shadow: 0px 5px 4px 0px rgba(135,129,129,0.9);
@@ -76,21 +94,21 @@ header > h1{
     font-weight: 600;
     font-size: 3em;
     font-style: italic ;
-    color: white;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);  
+    color: var(--white);
+    -webkit-text-stroke: 1px var(--black);  
 }
 
 header > p{
     font-family: "Archivo", sans-serif;
-    color: rgb(0, 0, 0);
+    color: var(--black);
     font-size: 2em;
     font-weight:900;
-    -webkit-text-stroke: 2px rgb(255, 250, 250);  
+    -webkit-text-stroke: 2px var(--white);  
 }
 
 .material-symbols-outlined{
     color: rgb(241, 113, 15);
-    -webkit-text-stroke: 1px rgb(21, 21, 21);  
+    -webkit-text-stroke: 1px var(--black);  
 }
 
 .container{
@@ -111,7 +129,7 @@ header > p{
 
 .card{
     padding: 20px;
-    border: 2px solid black;
+    border: 2px solid var(--black) ;
     
 }
 
@@ -129,7 +147,7 @@ header > p{
     font-style: italic;
 
 }
-#tony{
+#tony, #natasha, #loki, #mori, #tomura, #swift{
     width: 28em;
 }
 
@@ -137,6 +155,20 @@ footer > p{
     text-align: center;
 
 }
+
+.paragraf{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 30px;
+    margin: 7em;
+    border: 2px solid var(--black);
+    background-color: whitesmoke;
+    border-radius: 30px;
+    box-shadow: 1px -1px 21px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px -1px 21px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px -1px 21px -2px rgba(0,0,0,0.75);
+
+}
+
 
 
 

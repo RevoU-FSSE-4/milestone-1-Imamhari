@@ -16,7 +16,6 @@ main{
     grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
     padding: 20px;
-    
 }
 
 

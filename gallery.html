@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="gallery.css">
     <link rel="stylesheet" href="responsive.css">
     <title>Photography Course</title>
+    <link rel="icon" href="./assets/icons8-photography-100.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
@@ -25,9 +26,20 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="register.html">Register</a></li>
+            <img class="hamburger-btn" onclick="onOpenMenu()" src="./assets/hamburger.png" alt="menu" width="25px">
         </ul>
         </div>
     </nav>
+    <section>
+        <div id="mobile" class="menu-mobile">
+            <ul>
+                <li class="menu">Home</li>
+                <li class="menu">Gallery</li>
+                <li class="menu">Register</li>
+                <button onclick="onCloseMenu()" id="btn-close">Close</button>
+            </ul>
+        </div>
+    </section>
     <!-- header end -->
 
     <!-- content -->
@@ -61,5 +73,15 @@
         </p>
     </footer>
     <!-- footer end -->
+    <script>
+        function onOpenMenu(){
+            const popupMenu = document.getElementById("mobile");
+            popupMenu.classList.remove("menu-mobile")
+        }
+        function onCloseMenu(){
+            const popupMenu = document.getElementById("mobile");
+            popupMenu.classList.add("menu-mobile")
+        }
+    </script>
 </body>
 </html>
