@@ -3,9 +3,7 @@ body{
     background-size: cover;
 }
 .form{
-    margin: 15em;
-    display: flex;
-    flex-wrap: wrap;
+    margin: 5em 10em;
 }
 h4{
     text-align: center;
@@ -15,18 +13,49 @@ h4{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border: 0;
-    border-radius: 10px;
-/* } */
-.form-img > img{
-    width: 41em;
+}
+.form-img{
+    display: block;
+    background-image: url(./assets/registerfotobg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:39em;
+    width: 35em;
+    border-radius: 10px 0 0 10px;
+    backdrop-filter: blur(10px);
+}
+
+.form-img > p{  
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+.form-img > p{
+    font-family: "Anta", sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    font-style: italic ;
+    color: var(--white);
+    -webkit-text-stroke: 1px var(--black);  
 }
 .form-text{
     background-color: white;
-    height:33em;
+    border-radius: 0 10px 10px 0;
+    
 }
 .padding-text{
     padding:  30px;
+    background-size: cover;
 }
 .register-btn{
     background-color: #f38508;
@@ -44,4 +73,16 @@ h4{
     background-color: #0d52e5;
   color: white;
 }
+
+@media only screen and (max-width: 750px ) {
+    .form-img > p{
+        display: none;
+    }
+    .form-img{
+        display: none;
+    }
+    .form-text{
+        border-radius: 0 0 0 0;
+        
+    }
 }
