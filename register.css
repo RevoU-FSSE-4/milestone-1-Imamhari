@@ -23,6 +23,9 @@ h4{
     width: 35em;
     border-radius: 10px 0 0 10px;
     backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.71);
+    -webkit-box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.71);
+    -moz-box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.71);
 }
 
 .form-img > p{  
@@ -39,6 +42,7 @@ h4{
     width: 80%;
     padding: 20px;
     text-align: center;
+    
 }
 .form-img > p{
     font-family: "Anta", sans-serif;
@@ -51,6 +55,9 @@ h4{
 .form-text{
     background-color: white;
     border-radius: 0 10px 10px 0;
+    box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.71);
+    -webkit-box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.71);
+    -moz-box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.71);
     
 }
 .padding-text{
@@ -72,6 +79,10 @@ h4{
 .register-btn:hover{
     background-color: #0d52e5;
   color: white;
+}
+
+footer > p {
+    margin-top: 30px;
 }
 
 @media only screen and (max-width: 750px ) {
